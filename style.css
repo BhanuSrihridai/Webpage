@@ -6,38 +6,80 @@ body, h1, h2, p, ul, li, a {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #F2F2F2;
-    color: #333;
 }
 
 header {
-    background-color: #FF6B6B;
+    background-color: #333;
     color: #fff;
-    padding: 2em;
+    padding: 2em 0;
     text-align: center;
 }
 
-header h1 {
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #040404;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('C:\D365 CE Practice\HTML\Dental\dental-care-2516133_1920.png'); /* Add your image URL here */
+    background-size: cover;
+    color: #040404;
+    padding: 10px 0;
+}
+
+.hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #030303; /* Add text color */
 }
 
-.about, .services, .contact {
-    background-color: #FFD166;
-    padding: 2em;
-    margin: 2em 0;
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6B6B;
+    color: #060606;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF4848;
+}
+
+.services, .portfolio, .contact {
+    background-color: #F9F9F9;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Add text color */
 }
 
-.about h2, .services h2, .contact h2 {
-    font-size: 24px;
+.services h2, .portfolio h2, .contact h2 {
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .services ul {
     list-style-type: square;
     padding-left: 20px;
+    text-align: left;
 }
 
 .contact a {
@@ -52,7 +94,7 @@ header h1 {
 
 footer {
     text-align: center;
-    background-color: #6B5B95;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
